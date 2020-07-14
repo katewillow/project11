@@ -1,4 +1,13 @@
 "use strict";
+import './pages/index.css';
+import {Api} from './js/Api';
+import {Card} from './js/Card';
+import {FormValidator} from './js/FormValidator';
+import {UserInfo} from './js/UserInfo';
+import {Popup} from './js/Popup';
+import {CardList} from './js/CardList';
+import {ImagePopup} from "./js/ImagePopup";
+import {UserPopup} from "./js/UserPopup";
 
 (async function () {
     const template = document.querySelector('#template').content;
@@ -33,8 +42,9 @@
     const editUserInfo = new UserPopup(popupEdit, valuePerson, valueJob);
     const cardList = new CardList(cards);
 
+    const serverUrl = process.env.NODE_ENV === 'development' ? 'http://praktikum.tk/cohort11' : 'https://praktikum.tk/cohort11';
     const api = new Api({
-        baseUrl: 'https://praktikum.tk/cohort11',
+        baseUrl: serverUrl,
         headers: {
             authorization: '000169b8-90cd-4933-9d78-ff7ec047654c',
             'Content-Type': 'application/json'
@@ -125,25 +135,3 @@
     });
 
 })();
-
-/*
-    Отличная работа, задание выполнено полностью, запросы на сервер отправляются и все
-    данные сохраняются на странице после ответа сервера, есть обработка ошибок
-
-    + Единственое серьезное замечание - блок finally нужно размещать в самом конце цепочки.
-    Уверен Вы легко исправите это самомтоятельно.
-
-    Можно лучше:
-    + проверка ответа сервера и преобразование из json дублируется во всех методах класса Api,
-    лучше вынести в отдельный метод.
-    + для загрузки начальных данных использовать Promise.all, а не делать вложенные запросы.
-
-    Если у Вас будет свободное время попробуйте освоить работу с сервером
-    применив async/await для работы с асинхронными запросами.
-    https://learn.javascript.ru/async-await
-    https://habr.com/ru/company/ruvds/blog/414373/
-    https://www.youtube.com/watch?v=SHiUyM_fFME
-    Это часто используется в реальной работе
-
-    Успехов в дальнейшем обучении!
-*/

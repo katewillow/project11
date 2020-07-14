@@ -1,6 +1,6 @@
 "use strict";
-
-class FormValidator {
+import {errorMessages} from "./data";
+export class FormValidator {
     /**
      * @param form {Element}
      */

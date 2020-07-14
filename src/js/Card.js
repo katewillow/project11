@@ -1,6 +1,6 @@
 "use strict";
 
-class Card {
+export class Card {
     /**
      * @param card {ServerCard}
      * @param template {HTMLTemplateElement}
