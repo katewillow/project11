@@ -1,10 +1,11 @@
-#Project11
+# Project 11 
+
+## О проекте: 
+Учебный проект 11 спринта 
+
 v.0.0.1
 
-*О проекте:*
-Учебный проект 11 спринта Яндекс.Практикум
-
-*Основной функционал:*
+### Основной функционал:
 * Добавление новой карточки
 * Удаление карточки
 * Отображение количества лайков на карточке
@@ -12,10 +13,10 @@ v.0.0.1
 * Редактирование данных в профиле пользователя
 * Обновление аватара пользователя
 
-*Стэк технологий:*
+### Стэк технологий:
 ES6, Babel, OOP, CSS3, HTML5, Webpack, OOP, BEM
 
-*Пакеты которые используются в сборках:*
+### Пакеты которые используются в сборках:
 *  [Babel CLI](https://babeljs.io/docs/en/babel-cli#docsNav) 
 *  [Babel Core](https://babeljs.io/docs/en/babel-core) 
 *  [Babel Preset Evnvironment](https://babeljs.io/docs/en/babel-preset-env#docsNav) 
@@ -28,12 +29,12 @@ ES6, Babel, OOP, CSS3, HTML5, Webpack, OOP, BEM
 *  [Image Webpack loader](https://www.npmjs.com/package/image-webpack-loader) 
 *  [Cross-Env](https://www.npmjs.com/package/cross-env) 
 
-*Инструкции по запуску:*
+### Инструкции по запуску:
 * Скачать или склонировать репозиторий
 * Установить зависимости при помощи npm - npm i
 * Запустить в development режиме - npm run dev
 * Запустить сборку production-билда - npm run build
 * Разместить production-билд на github pages - npm run deploy
-* 
+
 ### Ссылка на github pages:
  [https://katewillow.github.io/project11/](https://katewillow.github.io/project11/) 
