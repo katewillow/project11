@@ -1,6 +1,6 @@
 "use strict";
 
-class Popup {
+export class Popup {
     /**
      * @param popup {Element}
      */

@@ -1,6 +1,6 @@
 "use strict";
-
-class UserPopup extends Popup {
+import {Popup} from './Popup';
+export class UserPopup extends Popup {
     /**
      * @param popup {Element}
      * @param person {Element}

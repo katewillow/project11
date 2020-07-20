@@ -3,7 +3,7 @@
 /** @typedef {{_id: string, name: string, about: string, avatar: string}} ServerUser */
 /** @typedef {{_id: string, owner: ServerUser, name: string, link: string, likes: ServerUser[]}} ServerCard */
 
-class Api {
+export class Api {
     constructor(options) {
         this.options = options;
         this._getResponseData = this._getResponseData.bind(this);

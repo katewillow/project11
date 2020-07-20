@@ -1,6 +1,6 @@
 "use strict";
-
-class ImagePopup extends Popup {
+import {Popup} from './Popup';
+export class ImagePopup extends Popup {
     /**
      * @param popup {Element}
      */

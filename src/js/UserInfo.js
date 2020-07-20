@@ -1,6 +1,6 @@
 "use strict";
 
-class UserInfo {
+export class UserInfo {
     /**
      * @param nameElement {Element}
      * @param jobElement {Element}
