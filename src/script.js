@@ -42,7 +42,7 @@ import {UserPopup} from "./js/UserPopup";
     const editUserInfo = new UserPopup(popupEdit, valuePerson, valueJob);
     const cardList = new CardList(cards);
 
-    const serverUrl = process.env.NODE_ENV === 'development' ? 'http://nomoreparties.co' : 'https://nomoreparties.co';
+    const serverUrl = process.env.NODE_ENV === 'development' ? 'http://nomoreparties.co/cohort11' : 'https://nomoreparties.co/cohort11';
     const api = new Api({
         baseUrl: serverUrl,
         headers: {
